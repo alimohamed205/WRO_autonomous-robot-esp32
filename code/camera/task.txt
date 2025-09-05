@@ -1,0 +1,4 @@
+Test camera.
+
+    Open the terminal (press Ctrl+ALT+T shortcut on the keyboard to open the terminal), and enter the following command to test the camera.    
+    DISPLAY=:0.0 nvgstcapture-1.0

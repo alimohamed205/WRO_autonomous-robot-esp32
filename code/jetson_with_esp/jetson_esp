@@ -1,0 +1,47 @@
+ تأكد كمان إن الكود اللي على ESP32 شغال وبيطبع
+
+الكود اللي كتبته:
+
+void setup() {
+  Serial.begin(115200);
+}
+
+void loop() {
+  Serial.println("Hello from ESP32");
+  delay(1000);
+}
+
+مظبوط تمام، بس ده بيبعت على USB فقط (يعني لـ Serial Monitor بتاع اللاب).
+لو عايز تبعت على UART (للجيتسون)، لازم تستخدم Serial1 (أو HardwareSerial تاني):
+✅ كود يشتغل على UART1:
+
+void setup() {
+  Serial1.begin(115200, SERIAL_8N1, 16, 17); // TX = 17, RX = 16
+}
+
+void loop() {
+  Serial1.println("Hello from ESP32 to Jetson");
+  delay(1000);
+}
+
+ووصّل:
+
+    ESP32 TX (GPIO 17) ⟶ Jetson Nano RX (Pin 10 → /dev/ttyTHS1)
+
+    GND ⟶ GND
+
+✅ كود الاستقبال على الجيتسون:
+
+import serial
+import time
+
+ser = serial.Serial('/dev/ttyTHS1', 115200)
+time.sleep(2)
+
+while True:
+    if ser.in_waiting:
+        data = ser.readline().decode().strip()
+        print("Received:", data)
+
+جرب كده وهتلاقي الجيتسون بدأ يطبع "Hello from ESP32 to Jetson" 💥
+وقولي لو عايز تعكس الاتجاه تاني أو تبعت أوامر معينة.
