@@ -10,6 +10,36 @@ This robot uses:
 - Wide-angle camera for vision tasks (via Jetson Nano or external processor)
 - Voice command input (planned for later phase)
 
+##  Media Showcase
+
+<p align="center">
+  <img src="media/photos/1.jpg" alt="Physical Robot" width="40%"/>
+</p>
+<p align="center">
+  <img src="media/photos/2.jpg" alt="Physical Robot" width="40%"/>
+</p>
+<p align="center">
+  <img src="media/photos/3.jpg" alt="Physical Robot" width="40%"/>
+</p>
+<p align="center">
+  <img src="media/photos/4.jpg" alt="Physical Robot" width="40%"/>
+</p>
+
+**Robot in Action (GIF):**
+<p align="center">
+  <img src="media/videos/demo1.gif" alt="Robot Demo" width="60%"/>
+</p>
+<p align="center">
+  <img src="media/videos/demo2.gif" alt="Robot Demo" width="60%"/>
+</p>
+
+### 🎥 Full Video and demo
+👉 [Watch the full demo video](media/videos/1.mp4)
+👉 [Watch the full demo video](media/videos/2.mp4)
+
+
+
+
 ## 📁 Project Structure
 
 ```
