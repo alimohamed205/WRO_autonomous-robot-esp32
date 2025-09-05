@@ -13,16 +13,16 @@ This robot uses:
 ##  Media Showcase
 
 <p align="center">
-  <img src="media/photos/1.jpeg" alt="Physical Robot" width="40%"/>
+  <img src="media/photos/photo1.jpeg" alt="Physical Robot" width="40%"/>
 </p>
 <p align="center">
-  <img src="media/photos/2.jpeg" alt="Physical Robot" width="40%"/>
+  <img src="media/photos/photo2.jpeg" alt="Physical Robot" width="40%"/>
 </p>
 <p align="center">
-  <img src="media/photos/3.jpg" alt="Physical Robot" width="40%"/>
+  <img src="media/photos/photo3.jpg" alt="Physical Robot" width="40%"/>
 </p>
 <p align="center">
-  <img src="media/photos/4.jpg" alt="Physical Robot" width="40%"/>
+  <img src="media/photos/photo4.jpg" alt="Physical Robot" width="40%"/>
 </p>
 
 **Robot in Action (GIF):**
